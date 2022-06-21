@@ -1,0 +1,1221 @@
+
+// Background colors/styles
+$black: #000000;
+$dark-grey: #323230;
+$semi-dark-grey: #454545;
+$mid-grey: #858585;
+$light-grey: #cccccc;
+$lighter-grey: #fafafa;
+$red: #e30613;
+$white: #ffffff;
+$transparent: transparent;
+
+// Text color
+$text-white: #fff;
+$text-light-grey: #e4e4e4;
+$text-main-grey: #333;
+// $red: #e30613;
+
+// Font weoghts
+$weight-400: 400;
+$weight-500: 500;
+$weight-600: 600;
+$weight-700: 700;
+$weight-800: 800;
+
+// Border styles
+$border-white: 1px solid #fff;
+$border-light-grey: 1px solid #eee;
+$border-dark-dashed: 6px dashed #323230;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #fff;
+    font-family: 'Montserrat', sans-serif !important;
+    color: $dark-grey !important;
+    font-size: 15px;
+    // word-break: break-word !important;
+}
+a {
+    color: $dark-grey !important;
+}
+a, .page-link {color: $dark-grey !important;}
+
+// Reausable general styles
+.z-index-1 {z-index: 1;}
+.z-index-2 {z-index: 2;}
+
+// Custom form styles
+.form-check-input:checked {background-color: $red !important; border-color: $red !important;}
+
+// Custom font weights
+.fw-500 { font-weight: 500;}
+
+// Custom text colors
+.text-dark-grey {color: $dark-grey;}
+.text-mid-grey {color: $mid-grey;}
+.text-light-grey {color: $light-grey;}
+.text-red {color: $red;}
+
+// Custom borders
+.separator-90px {width: 100px; height: 2px;}
+.border-bottom-subpages {width: 100%; border-bottom: 1px solid #d7d7d7;}
+.border-top-light-grey {width: 100%; border-top: $border-light-grey;}
+.border-top-separator { border-top: 1px solid #34393e;}
+.border-dashed {width: 100%; border: $border-dark-dashed;}
+
+// Force cursors pointer
+.cursor-pointer {cursor: pointer;}
+
+// Custom backgrounds
+.bg-red {background: $red;}
+.bg-dark-grey {background: $dark-grey;}
+.bg-light-grey {background: $light-grey !important;} // Overiding Bootstrap
+.bg-lighter-grey {background: $lighter-grey;}
+.bg-white {background: #ffffff;}
+.bg-transparent {background: transparent;}
+.bg-black {background: $black;}
+
+// line under titles
+.under-title {width: 70px; height: 3px;}
+
+// Button styles // overriding Bootstrap defaults
+.hover-red:hover {color: $red !important;}
+.hover-white:hover {color: $white !important;}
+.hover-dark:hover {color: $dark-grey !important;}
+.hover-transparent:hover {background: $transparent !important;}
+
+// Used for login / signup
+.btn-google {background-color: #ea4335;}
+.row {margin-left: 0 !important; margin-right: 0 !important;}
+
+// Only used for feedback form
+.feedback-form {
+    .form-check-input:checked + .form-check-label {
+        color: $red !important;
+    }
+    .form-check-input:checked {
+        background-color: $light-grey !important;
+    }
+}
+
+.hd, .time {
+    font-size: 12px;
+}
+.play-btn {
+    font-size: 5rem;
+    color: $red;
+    line-height: 1;
+    // width: 60px;
+    // height: 60px;
+    border-radius: 50%;
+    background-color: $transparent;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    // background-image: url('/images/play-video-btn.png');
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+
+.title-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.video-quality-time {
+    position: absolute;
+    color: white;
+    display: flex;
+    top: 16px;
+    left: 15px;
+    align-items: flex-start;
+    width: auto;
+    span {
+        i {
+            font-size: 17px;
+            font-weight: bold;
+        }
+        :hover {
+            color: $red;
+            cursor: pointer;
+        }
+    }
+}
+.love-share-add {
+    position: absolute;
+    color: white;
+    display: flex;
+    top: 16px;
+    right: 15px;
+    align-items: flex-end;
+    width: auto;
+    span {
+        i {
+            font-size: 17px;
+            font-weight: bold;
+        }
+        :hover {
+            color: $red;
+            cursor: pointer;
+        }
+    }
+}
+.total-time {
+    position: absolute;
+    color: white;
+    display: flex;
+    bottom: 25px;
+    right: 15px;
+    align-items: flex-end;
+    width: auto;
+}
+.faded-bottom-card-text {
+    padding: 10px 15px 0 15px;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 0;
+    align-items: flex-start;
+    display: block;
+    width: 100%;
+    background-color: #32323012;
+    h2 {
+        margin: 0;
+        color: white;
+        text-shadow: 0 1px 0 black;
+    }
+}
+
+
+// Reusable block to lines under the page section headings
+.heading-undelines {
+    display: flex;
+    .red {
+        width: 20%; height: 1px; background-color: #E30613;
+    }
+    .grey {
+        width: 90%; height: 1px; background-color: rgb(118, 118, 118);
+    }
+}
+
+.object-fit {
+    object-fit: cover;
+}
+
+.text-truncate-line-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.text-truncate-line-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+// Bootstrap 5 overides
+.btn:focus, .btn:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none;
+}
+select:focus, input:focus, .form-control:focus {
+    border-color: #454545;
+    outline: none !important;
+    box-shadow: none;
+}
+.card {
+    border: 0px;
+    border-radius: 0px;
+}
+
+
+
+
+// Header only styles
+header {
+    background: $dark-grey;
+    border-bottom: 1px solid $semi-dark-grey;
+    .custom-border {
+        border: 1px solid $semi-dark-grey;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    .logo {
+        width: 115px;
+    }
+    nav {
+        .search-form {
+            select, input {
+                // font-size: $size-08;
+                font-style: italic;
+                color: $mid-grey;
+                font-size: 13px;
+            }
+            select {
+                option{
+                    font-style: normal;
+                }
+            }
+            .form-control:focus {
+                color: $mid-grey !important;
+                font-style: normal;
+            }
+            .form-select {
+                background-image: url('../images/icons/form-select.png');
+                background-repeat: no-repeat;
+                background-position: right 0.75rem center;
+                background-size: 10px 6px;
+            }
+        }
+    }
+}
+// END Header only styles
+
+
+
+// Hero section JEENI.COM
+.hero-bg-img, .single-view-bg {
+    background-image: url('../images/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-feature {
+    img {
+        width: 45px;
+    }
+    .fs-13 {
+        font-size: 13px;
+    }
+}
+
+
+
+// VIDEO PLAYER CUSTOM CSS
+.tooltip {
+    z-index: 1400k
+}
+.videoplayer {
+    position: relative;
+    display: block;
+    video {
+        max-width: 100%;
+        max-height: 100%;
+        // height: 326px; background: #010001;
+    }
+    .controls {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        bottom: 0;
+        background-color: #eee;
+        .progress {
+            background-color: #333;
+            border-radius: 0;
+            .progress-bar {
+                transition: none !important;
+                background-color: #0073aa;
+            }
+        }
+        .auto-hide {
+            opacity: 1;
+        }
+    }
+    .controls-light {
+        .bi {
+            color: #2b2b2b;
+        }
+    }
+    .controls-dark {
+        background-color: #080404;
+        .progress {
+            background-color: #6b6b6b;
+            height: 10px;
+        }
+        .bi {
+            color: #eee
+        }
+    }
+    .auto-hide {
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        transition-delay: .5s
+    }
+    .overlay {
+        // position: absolute;
+        z-index: 300;
+        /* top: 0;
+        left: 0 */
+        .title {
+            font-size: inherit;
+            color: #fff;
+            padding: .5rem;
+            font-weight: bold;
+        }
+    }
+    .dropup-volume {
+        position: absolute !important;
+        bottom: calc(100% + 5px) !important;
+        padding: .75rem 1rem;
+        transform: none !important;
+        min-width: inherit;
+        .form-range {
+            -webkit-appearance: slider-vertical;
+            width: 10px !important;
+            height: 100% !important;
+        }
+    }
+    .dropdown-menu-dark {
+        background: transparent;
+        padding: 0rem 1rem
+    }
+}
+
+
+// Owl Carousel custom overide styles
+.owl-theme {
+    .owl-dots {
+        margin-top: -32px !important;
+        z-index: 1;
+        position: relative;
+        span {
+            width: 33px !important;
+            height: 4px !important;
+            border-radius: 0px !important;
+            margin: 5px !important;
+            background: $white !important;
+        }
+        .active {
+            span {
+                background: $red !important;
+            }
+        }
+    }
+    .owl-nav {
+        // display: none !important;
+        margin-top: 0;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        background: transparent;
+        justify-content: space-between;
+        z-index: -1;
+        transition: .3s ease-in-out;
+        [class*='owl-'] {
+            top: 0;
+            color: $text-main-grey;
+            font-size: 80px;
+            line-height: 50px;
+            padding: 0;
+            margin: 0;
+            :hover {
+                background-color: transparent;
+                color: $red;
+                transition: .3s ease-in-out;
+            }
+        }
+        span {
+            font-size: 60px !important;
+        }
+        .owl-prev {
+            top: 0;
+            z-index: 1;
+            position: relative;
+            left: -45px;
+            display: inline;
+            z-index: 2;
+        }
+        .owl-next {
+            top: 0;
+            right: 0;
+            z-index: 1;
+            position: relative;
+            right: -45px;
+            display: inline;
+        }
+    }
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+}
+// END Owl Carousel custom overide styles
+
+
+// Caroussel styles Jenni-viewers and jenni-artists
+.jeeni-viewers-artists{
+    .owl-carousel {
+        .item {
+            height: 396px;
+            min-height: 396px;
+            max-height: 396px;
+            margin: 0 -1px;
+            img {
+                width: 100%;
+                height: 396px;
+                min-height: 396px;
+                max-height: 396px;
+                overflow: hidden;
+                object-fit: cover;
+            }
+        }
+    }
+    .owl-stage-outer {
+        border-left: 3px solid $red;
+        min-height: 396px;
+        max-height: 396px;
+        overflow: hidden;
+    }
+}
+
+
+
+// Latest videos OWL resets
+.latest-videos {
+    background-image: url('../images/latest-video-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .owl-stage-outer {
+        border: none;
+        .item {
+            img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+    // Owl arrow controls
+    .arrows {
+        color: $text-white;
+        font-size: 50px;
+    }
+    .owl-carousel {
+        .owl-nav {
+            background-color: transparent;
+            .owl-prev, .owl-next {
+                :hover {
+                    color: $red !important;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+
+}
+
+
+// Inside stories section styles desktop and mobile
+.inside-stories {
+    .container-grid {
+        display: grid;
+        grid-gap: 15px;
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        .top-left {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .bottom-left {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .middle {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 2;
+            align-items: stretch;
+            // .play-btn {
+            //     display: block;
+            // }
+        }
+        .top-right {
+            grid-column: 4;
+            grid-row: 1;
+        }
+        .bottom-right {
+            grid-column: 4;
+            grid-row: 2;
+        }
+        .top-left, .bottom-left, .middle, .top-right, .bottom-right {
+            height: auto;
+            // min-height: 255px;
+            // max-height: 255px;
+            transition: 0.5s ease-in-out;
+            :hover {
+                .play-btn {
+                    display: block;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+
+    }
+    // This is for the mobile slider only
+    .mob-container  {
+        display: inline-block;
+        .top-left, .bottom-left, .middle, .top-right, .bottom-right {
+            transition: 0.5s ease-in-out;
+        }
+        a {
+            .play-btn {
+                display: block;
+                z-index: 1;
+                color: #e306137a;
+            }
+        }
+
+    }
+    // Owl arrow controls - desktop
+    .arrows {
+        color: $text-main-grey;
+        font-size: 50px;
+    }
+    .owl-carousel {
+        .owl-nav {
+            top: 40%; //This controls the position of this section carroussel vertically (up an down)
+            background-color: transparent;
+            .owl-prev, .owl-next {
+                :hover {
+                    color: $red;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+    .owl-theme .owl-dots {
+        margin-top: 0px !important;
+        button.owl-dot.active {
+            span {
+                background: $red !important;
+            }
+        }
+        button.owl-dot {
+            span {
+                background: $dark-grey !important;
+            }
+        }
+    }
+}
+// END inside stories section styles
+
+
+// FOOTER
+.footer {
+    width: 100%;
+    // li {
+    //     margin-bottom: 5px;
+    //     a {
+    //         color: $mid-grey;
+    //         :hover {
+    //             color: #ffffff;
+    //             text-decoration: underline;
+    //         }
+    //     }
+    // }
+    ul li a {
+        color: #6c757d !important;
+        text-decoration: none;
+    }
+    .logo {
+        width: 100px;
+    }
+}
+// END footer
+
+
+// FROM HERE DOWN ARE STYLES FOR SUBPAGES ONLY
+
+// My profile page (my tracks)
+.mytracks {
+    .single-track {
+        img {
+            height: 220px;
+            min-height: 220px;
+            max-height: 220px;
+            object-fit: cover;
+        }
+    }
+}
+
+// ****** Sub page title showcase ****** //
+.page-title-showcase {
+    background-image: url('../images/subpage-title-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #34373bad;
+    .overlay {
+        background: #212529ad;
+    }
+    h1 {
+        font-size: 60px;
+    }
+}
+
+// For tabs under profile page
+.nav-tabs {
+    .nav-link {
+        color: $dark-grey;
+    }
+    .nav-item {
+        .active {
+            color: $red;
+        }
+    }
+}
+
+
+
+
+// Cover profile image
+// .container {
+//     max-width: 960px;
+//     margin: 30px auto;
+//     padding: 20px;
+// }
+
+// h1 {
+//     font-size: 20px;
+//     text-align: center;
+//     margin: 20px 0 20px;
+//     // small {
+//     //     display: block;
+//     //     font-size: 15px;
+//     //     padding-top: 8px;
+//     //     color: gray;
+//     // }
+// }
+
+.avatar-upload {
+    position: relative;
+    // max-width: 205px;
+    width: 100%;
+    // margin: 50px auto;
+    .avatar-edit {
+        position: absolute;
+        right: 120px;
+        z-index: 1;
+        bottom: 20px;
+        input {
+            display: none;
+            + label {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                margin-bottom: 0;
+                border-radius: 7px;
+                background: #FFFFFF;
+                // border: 1px solid transparent;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                padding: 10px 20px;
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    background: #f1f1f1;
+                    border-color: #d6d6d6;
+                }
+                // &:after {
+                //     content: "\f040";
+                //     font-family: 'FontAwesome';
+                //     color: #757575;
+                //     position: absolute;
+                //     top: 10px;
+                //     left: 0;
+                //     right: 0;
+                //     text-align: center;
+                //     margin: auto;
+                // }
+            }
+        }
+    }
+    .avatar-preview {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        // border-radius: 100%;
+        // border: 6px solid #F8F8F8;
+        // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        > div {
+            width: 100%;
+            height: 100%;
+            // border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+// END cover profile image
+
+
+
+
+// Pages with image cover like Profile page etc...
+.croppie-container {
+    max-height: 200px;
+    min-height: 200px;
+}
+#my-image, #use {
+    // display: none;
+    width: 100%;
+    max-width: 1138px;
+    object-fit: cover;
+    max-height: 300px;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.profile-cover {
+    width: 200px;
+    // background-image: url('../images/profile-cover.png');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-color: #34373bad;
+    height: 200px;
+    margin-top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    .profile-picture {
+        width: 150px;
+        max-width: 150px;
+        height: 150px;
+        background: #ffffff;
+        z-index: 1;
+        .profile-photo {
+            width: 100%;
+            max-width: 150px;
+            height: 150px;
+            text-align: center;
+            margin-top: -12px;
+            .add-photo-icon {
+                text-align: center;
+                margin-top: -5px;
+                a {
+                    i {
+                        padding: .5em;
+                    }
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 150px;
+            max-width: 150px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+    }
+}
+
+// Upload track button
+.upload-track {
+    position: relative;
+    overflow: hidden;
+    input {
+        position: absolute;
+        font-size: 50px;
+        opacity: 0;
+        right: 0;
+        top: 0;
+    }
+}
+// To close modal cross
+.mt-n15 {margin-top: -15px;}
+
+
+// Upload video Modal/popup styles
+.four-channels-selection {
+    max-height: 330px;
+    overflow-y:  scroll;
+
+}
+
+
+
+// UPLOAD TRACK only styles
+#uploadTrackPopup {
+    .customCheckbox {
+        width: 100%;
+        height: 35px;
+        border-radius: 0 !important;
+    }
+    .customCheckBoxContainer {
+        width: 25%;
+        position: relative;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .customCheckBoxLabel {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .form-check-input:checked[type=checkbox] {
+        background-image: none !important;
+    }
+
+    .form-check-input:checked {
+        background-color: #fff !important;
+        border-color: #dc3545 !important;
+    }
+
+    .form-check-input:checked ~ label {
+        color: #dc3545 !important;
+    }
+
+    .form-check-input:focus , .form-control:focus {
+        border-color: #f58e98;
+        outline: 0;
+        // box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
+    }
+
+    .btn-close:focus {
+        outline: 0;
+        // box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
+        opacity: 1;
+    }
+
+    .selectedItem {
+        width: 24%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .selectedItemValue {
+        width: 100%;
+        color: #dc3545;
+    }
+
+    .customFileInputContainer {
+        position: relative;
+    }
+
+    .customFileLabel {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-style: italic;
+        font-size: 1.5rem;
+        z-index: 10;
+    }
+
+    .customFileInput {
+        opacity: 0;
+        position: relative;
+        z-index: 10000;
+    }
+}
+
+#uploadTrackPopup .modal-dialog {
+    width: 90% !important;
+}
+// END UPLOAD TRACK only styles
+
+
+// My favourite artists page "my-artist"
+
+.choices__item.choices__item--selectable {
+    background-color: #eee;
+    border-color: none;
+    color: #333;
+}
+.choices__list--multiple .choices__item {
+    background-color: $red !important;
+    border: none !important;
+}
+.choices__item.choices__item--selectable:hover,
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: $red;
+    border: none;
+    color: $red;
+}
+
+
+// Partner's page
+.partner {
+    // max-width: 280px;
+    min-height: 280px;
+    // height: 400px;
+    // margin: 0 auto;
+    padding: 3px;
+    overflow: hidden;
+    img {
+        // width: 100%;
+        height: 100%;
+        // object-fit: cover;
+
+    }
+    h5 {font-size: 16px;}
+    p {word-break: break-word; font-size: 12px;}
+}
+// END Partner's page
+
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    // min-height: 310px;
+    // perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    // min-height: 330px;
+}
+
+.flip-card-front {
+    background-color: #ffffff;
+    color: inherit;
+}
+.flip-card-front img {
+    width: 196px;
+    height: 196px;
+    //   object-fit: cover;
+    border: 0;
+}
+.flip-card-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    padding: 15px;
+}
+
+
+
+
+
+
+
+// The media query modification
+@media only screen and (min-width: 1600px) {
+    .container-xl {
+        max-width: 1600px;
+    }
+}
+
+
+
+
+
+
+
+/* sidebar start */
+.side-navbar {
+    width: 250px;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    margin-right: -300px;
+    margin-top: 76px;
+    padding-top: 20px;
+    transition: 0.5s;
+    z-index: 111;
+    background-color: #323230;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+.my-container {
+    margin-right: 0;
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-right: 0;
+}
+
+/* for main section */
+.active-cont {
+    margin-right: 250px;
+}
+
+#menu-btn {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    // margin-right: -45px;
+    font-size: inherit;
+    text-transform: uppercase;
+}
+#menu-btn i {
+    // font-size: 30px;
+    margin-left: 10px;
+}
+#My_Jenni_text{
+    margin-right: 25px;
+}
+.my-container {
+    z-index: 11111111;
+}
+.sidebar-overly {
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    background: #000000bd;
+    // position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    transition: all 0.4s;
+}
+.active-sidebaroverly{
+    display: block !important;
+}
+
+#my-profile,
+#my-artists,
+#my-playlist,
+#my-feedback,
+#my-account,
+#logout {
+    padding: 10px 15px;
+    transition: background 0.4s;
+}
+#my-profile i,
+#my-artists i,
+#my-playlist i,
+#my-feedback i,
+#my-account i,
+#logout i {
+    margin-right: 10px;
+}
+#my-profile:hover,
+#my-artists:hover,
+#my-playlist:hover,
+#my-feedback:hover,
+#my-account:hover,
+#logout:hover {
+    background-color: #424649;
+    cursor: pointer;
+}
+#my-profile:hover,
+#my-artists:hover,
+#my-playlist:hover,
+#my-feedback:hover,
+#my-account:hover,
+#logout:hover ul.submenu{
+    display: block !important;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    right: 248px;
+    top: 0;
+    transition: all 0.4s;
+}
+.submenu-active {
+    display: block !important;
+}
+.hamburger .line{
+    width: 25px;
+    height: 3px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+/* ONE */
+
+#hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+    -webkit-transform: translateY(10px) rotate(45deg);
+    -ms-transform: translateY(10px) rotate(45deg);
+    -o-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+    #My_Jenni_text {
+        display: none;
+    }
+    ul.submenu {
+        position: revert;
+    }
+    .no-mob {display: none;}
+    .float-right-mob {
+        position: absolute; right: 25px; top: 25px
+    }
+}
+/* sidebar end */
+
+@media only screen and (min-width: 1600px) {
+    .container-xl {
+        max-width: 1600px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

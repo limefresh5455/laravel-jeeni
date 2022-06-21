@@ -1,0 +1,7 @@
+.dataTable .select2-container {
+    width: 100% !important;
+}
+.dataTable .img-responsive {
+    width: 100% !important;
+    max-width: 150px !important;
+}

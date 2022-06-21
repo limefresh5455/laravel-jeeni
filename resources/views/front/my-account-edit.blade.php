@@ -4,6 +4,7 @@
 
 @section('content')
     <main>
+         @include('front.partials.border')
         <!-- Breadcrumb -->
         <div style="display: block !important;" class="w-40 border-bottom-subpages d-none d-md-block mb-md-4">
             <div class="container-xl">

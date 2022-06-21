@@ -4,6 +4,20 @@
 
 @section('content')
     <main>
+        <!-- Breadcrumb -->
+        <div style="display: block !important;" class="w-40 border-bottom-subpages d-none d-md-block mb-md-4">
+            <div class="container-xl">
+                <div class="row" >
+                    <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb my-2 text-capitalize">
+                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-black-50">Home</a></li>
+                            <li class="breadcrumb-item text-red" aria-current="page">My <span class="fw-normal">Account</span></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- // Breadcrumb -->
         <!-- Body content -->
         <div class="container-xl py-5 body-content">
 
@@ -168,12 +182,14 @@
                 $('#closeAccountCard').show(600);
                 $('#accountDetails').removeClass('text-danger');
                 $(this).addClass('text-danger');
+                $('.fw-normal').text('Dashboard');
             });
             $('#accountDetails').click(function () {
                 $('#closeAccountCard').hide(600);
                 $('#accountDetailsCard').show(600);
                 $('#closeAccount').removeClass('text-danger');
                 $(this).addClass('text-danger');
+                $('.fw-normal').text('Account');
             });
             // Show and hide password
             $('#togglePassword').click(function () {
